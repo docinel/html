@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Cadastro de Pedidos</h1>
+        <h3>Insira as informações dos pedidos:</h3>
+    </header>
+    <section>
+        <div id="teste">
+
+          
+          <br>Nº Pedido: <input type="text" name="fnum" placeholder="Pedido" id="pedido">
+          Data Cadastro: <input type="date" name="data_cadastro">
+          Data Faturamento: <input type="date" name="data_faturamento"><br><p></p>
+          Nome:<input type="text" name="nome" placeholder="Nome do Cliente">
+          CPF / CNPJ: <input type="text" name="cpf_cnpj" placeholder="Digite o cpf / cnpj">
+          Telefone: <input type="tel" name="tel" placeholder="31999999999"><br><p></p>
+          Código: <input type="text" name="codprod" id="" placeholder="Codigo do produto">
+          Qde: <input type="number" name="qtd" id=""> Valor: <input type="number" name="valor" id=""><br><p></p>
+          Obs: <textarea name="obs" id="obs" cols="" rows="">
+* CARTAO DE CREDITO AUT.: 
+** VENDA NA MAQ SIPAG
+*** DESCONTO AUTORIZADO PELO JOSE FLAVIO
+**** PRODUTO DO ESTOQUE DA LOJA
+***** FAVOR LIGAR ANTES DA ENTREGA"</textarea>
+
+         <br><br> <input type="button" value="Adicionar" onclick="adicionar()">
+          <br><br><select name="flista" id="flista" size="10"></select>
+          <br><input type="button" value="Finalizar" onclick="obsver()">
+        </p>
+        </div>
+        <div id = "res">
+        </div>
+        <div id = "res2">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; RodrigoDocinel</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

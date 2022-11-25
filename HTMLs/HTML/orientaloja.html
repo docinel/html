@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NATUREZA DE OPERAÇÕES</title>
+    <style>
+        caption{
+            color: chocolate;
+            text-align: center;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            border-style: groove;
+            margin: auto;
+        
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: .625rem;
+        }
+        td, th{
+            /**border: 0.0625em solid blue;**/
+            padding: .625rem;
+            border-style: groove;
+            border-collapse:separate;
+            background-color: rgb(207, 205, 205);
+        }
+        #foot{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: small;
+        text-align: center;    
+        }
+        #dif{
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!--<h1>TABELA NATUREZA DE OPERAÇÕES</h1> !-->
+    </header>
+<table>
+    <section>
+        <caption>
+            TABELA NATUREZA DE OPERAÇÕES
+        </caption>
+        <thead>
+            <tr>
+                <th colspan="2">DESCRIÇÃO</th>
+                <th>FORMAS DE PAGAMENTO</th>
+                <th>NATUREZA OPERAÇÕES</th>
+                <th>OBSERVAÇÕES</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="8">PCP</th>
+                <th rowspan="5">PEDIDO LOJA</th>
+                <td colspan="3" id="dif">Sempre verificar identificador e código no <b>Relatório de Estoque</b> antes de inserir os itens</td>
+            </tr>
+            <tr>
+                <td><li>Dinheiro</li> <li>Cheque</li> </td>
+                <td>Vendas</td>
+                <td>----------</td>
+            </tr>
+            <tr>
+                <td><li>Cartão Crédito</li> <li>Débito</li> </td>
+                <td> Venda Entrega Futura</td>
+                <td>----------</td>
+            </tr>
+            <tr>
+                <td>PIX</td>
+                <td>Vendas</td>
+                <td>Após confirmação alterar para Venda Entrega Futura <br> <b style="color: red;">Favor aguardar a Confirmação do Romullo</td>
+            </tr>
+            <tr>
+                <td>Link</td>
+                <td>Vendas</td>
+                <td>Após confirmação alterar para Venda Entrega Futura <br> <b style="color: red;">Favor aguardar a Confirmação do Romullo</b></td>
+            </tr>
+            <tr>
+                <th rowspan="2">PEDIDO FÁBRICA</th>
+                <td><li>Dinheiro</li> <li>Cheque</li> <li>Cartão</li> </td>
+                <td>Venda Entrega Futura</td>
+                <td>----------</td>
+            </tr>
+            <tr>
+                <td>PIX / Link</td>
+                <td>Vendas</td>
+                <td>Após confirmação alterar para Venda Entrega Futura <br> <b style="color: red;">Favor aguardar a Confirmação do Romullo</td>
+            </tr>
+            <tr>
+                <th>DIVISÃO DE PEDIDO</th>
+                <td colspan="3">
+                    <li>Quando a mercadoria sair da Loja e Fábrica haverá a <b>DIVISÃO DE PEDIDO.</b></li>
+                </td>
+                
+            </tr>
+            
+            <tr>
+                <th rowspan="3">FISCAL</th>
+                <th rowspan="2">NOTA FISCAL</th>
+                <td>Estoque da Loja</td>
+                <td>Venda mercadoria cartão</td>
+                <td>----------</td>
+            </tr>
+            <tr>
+                <td>Produção / Fábrica</td>
+                <td>Faturamento Antecipado</td>
+                <td>----------</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5", style="text-align: center;">SOMENTE EMITIR <span style="color: red;">NOTA FISCAL</span>  QUANDO A VENDA FOR REALIZADA ATRAVES DA <span style="font-style: italic;">MÁQUINA DA LOJA</span> </td>
+            </tr>
+        </tfoot>
+    </section>
+</table>
+<footer>
+    <div id="foot">
+      NOGUEIRA ANDRADE INDUSTRIA E COMERCIO LTDA <br>
+      AV PREFEITO JOSE SURDO, Nº 1345, -MATEUS LEME-MG – CEP.: 35670-000.     Contato: (31) 3191-7088 / (31) 3191-7089 <br>
+      CNPJ.: 25.404.617/0001-01 IE.: 407573617.00-77 <br>
+
+    </div>
+</footer>
+<script>
+        alert("Favor ler o quadro informativo sobre as NATUREZAS DE OPERAÇÕES!!!")
+</script>
+
+</body>
+</html>

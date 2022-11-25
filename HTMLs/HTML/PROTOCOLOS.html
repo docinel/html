@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&lt;&lt; DOCUMENTOS E PROTOCOLOS &gt;&gt;</title>
+  <link rel="stylesheet" href="Protocolo/styles.css">
+</head>
+<body>
+  <!-- 
+  <section class="bg">
+    <h2>Puche para ver</h2>
+    <span class="SkewedOne"></span>
+    <span class="SkewedTwo"></span>
+</section> -->
+  <header>
+    <div>
+      <button class="btn btn1"><a href="http://186.194.240.82:8081/web/trib.html" target="_new">Serviços -
+          Prefeitura</a></button>
+      <button class="btn btn2"><a
+          href="https://docs.google.com/spreadsheets/d/1NT9BxOdkd6LXkAx5Tpt2Yh8m8UgPIpycd7kGD7Rm7MY/edit?usp=sharing"
+          target="_new"> Lista de Pendências</a></button>
+      <button class="btn btn3"><a
+          href="https://docs.google.com/document/d/1z1VhIQosX6cEZnVF5mImkhGR9stqg5Xz-WwAqm_-ym4/edit?usp=sharing"
+          target="_new"> Fluxograma</a> </button>
+      <button class="btn btn4"><a href="formularios.html" target="_new">Formulários e Requerimentos</a></button>
+      <button class="btn btn5"><a href="precos.html" target="_new">Preços Públicos</a></button>
+      <button class="btn btn6"> <a href="engenharia.html" target="_new">Documentos novos Engenharia</a></button>
+     <div class="dropdown">
+        <button style="position: sticky;" class="dropbtn">Lista de E-mails das Secretarias</button>
+        <div class="dropdown-content">
+          <a href="mailto:protocolo@mateusleme.mg.gov.br">📩 Protocolo</a>
+          <a href="mailto:tributos@mateusleme.mg.gov.br">📩 Tributos</a>
+          <a href="mailto:andersonsousa@mateusleme.mg.gov.br">📩 Anderson Wester - Vice-prefeito</a>
+          <a href="mailto:adm@mateusleme.mg.gov.br">📩 Cleusa Maria - Secretaria de Administração</a>
+          <a href="mailto:fabricionuno@mateusleme.mg.gov.br">📩 Fabricio Nuno - Secretario Geral de Administração </a>
+          <a href="mailto:educacao@mateusleme.mg.gov.br">📩 Fatima Gaia- Secretaria de Educação</a>
+          <a href="mailto:francisco@mateusleme.mg.gov.br">📩 Francisco Braga - Planejamento e Fazenda</a>
+          <a href="mailto:ouvidoria@mateusleme.mg.gov.br">📩 Franklin Lopes - Ouvidoria</a>
+          <a href="mailto:meioambiente@mateusleme.mg.gov.br">📩 Heleno Maia - Meio Ambiente</a>
+          <a href="mailto:desenvolvimento@mateusleme.mg.gov.br">📩 João Flavio - Desenvolvimento Econ e Social</a>
+          <a href="mailto:saude@mateusleme.mg.gov.br">📩 José Carlos - Saúde</a>
+          <a href="mailto:procuradoria@mateusleme.mg.gov.br">📩 Júlio Oliveira - Procurador Geral</a>
+          <a href="mailto:assistenciasocial@mateusleme.mg.gov.br">📩 Michelli Fabianna - Assistencia Social</a>
+          <a href="mailto:controladoria@mateusleme.mg.gov.br">📩 Renato Braga - Controlador Geral</a>
+          <a href="mailto:esporte@mateusleme.mg.gov.br">📩 Renata Júnia - Esporte, Lazer e Turismo</a>
+          <a href="mailto:reniltoncoelho@mateusleme.mg.gov.br">📩 Renilton Ribeiro - Prefeito</a>
+          <a href="mailto:gabinete@mateusleme.mg.gov.br">📩 Walter Expedito - Chefe de Gabinete</a>
+          <a href="mailto:comunicacao@mateusleme.mg.gov.br">📩 Wesley Alexandro - Assessoria de Comunicação</a>
+          <a href="mailto:obras@mateusleme.mg.gov.br">📩 Wisley Santiago - Secretaria de Obras</a>
+          <a href="mailto:transleme@mateusleme.mg.gov.br">📩 Transleme</a>
+
+        </div>
+      </div>
+    </div>
+    <h1>TIPOS DE DOCUMENTOS E PROTOCOLOS</h1>
+
+    <div id="data-hora"></div><br>
+    <div class="filtros">
+      <input type="text" id="filtro-nome" placeholder="Buscar..."/>
+    </div>
+    <div style="display: inline-block; position:0;">
+      <input type="button" value="Calcular o Aumento da guia:" onclick="verificar()">
+      <div id="res" style="display: inline-block;"></div>
+    </div>
+  </header>
+  <table id="lista">
+    <thead>
+      <tr>
+        <th>
+          <div>Tipo de Protocolo</div>
+        </th>
+        <th>Tipo de Documento</th>
+        <th>Encaminhar para o Setor</th>
+        <th>Observação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Assinatura do Prefeito na planta</td>
+        <td>
+          <ul>
+            <li>RG / CPF</li>
+          </ul>
+        </td>
+        <td>Gabinete do Prefeito</td>
+        <td>
+          <li>Escritura</li>
+          <li>Memorial Descritivo</li>
+          <li>Planta</li>
+        </td>
+      </tr>
+      <tr>
+        <td>Avaliação Imobiliária</td>
+        <td>
+          <ul>
+            <li>Escritura ou contrato de compra e venda com procedência reconhecido em cartório.</li>
+            <li>RG/ CPF</li>
+            <li>Taxa de Avaliação paga</li>
+            <li>Escritura</li>
+            <li>Comprovante de endereço</li>
+          </ul>
+        </td>
+        <td>Engenharia</td>
+        <td>
+          <li>Caso tenha inventário deverá solicitar ao setor de engenharia para avaliar quais folhas serão necessárias
+            copiar.</li>
+          <li>Somente o proprietário pode <strong>Assinar</strong> ou terceiros com Procuração registrada em cartório
+          </li>
+        </td>
+      </tr>
+      <tr>
+        <td>Esvaziamento de fossa</td>
+        <td>
+          <ul>
+            <li>RG/ CPF</li>
+            <li>Comprovante de endereço.</li>
+          </ul>
+        </td>
+        <td>Obras</td>
+        <td>--</td>
+      </tr>
+      <td>Solicitação de cópia de prontuário médico, transferência de prontuário, atestado</td>
+      <td>
+        <ul>
+          <li>RG e ou CPF.</li>
+          <li>Atestado de óbito (Prontuário)</li>
+          <li>Comprovante de endereço.</li>
+        </ul>
+      </td>
+      <td>Saúde</td>
+      <td>Qdo for transferência de prontuário para outro posto dentro do município não é necessário protocolo, apenas ir
+        ao posto de saúde.</td>
+      </tr>
+      <tr>
+        <td>Supressão de árvore no passeio</td>
+        <td>
+          <ul>
+            <li>RG e ou CPF.</li>
+            <li>Comprovante de endereço.</li>
+          </ul>
+        </td>
+        <td>Obras</td>
+        <td>--</td>
+      </tr>
+      <tr>
+        <td>Supressão de árvore no lote</td>
+        <td>
+          <ul>
+            <li>RG e ou CPF.</li>
+            <li>Comprovante de endereço.</li>
+          </ul>
+        </td>
+        <td>Obras</td>
+        <td>Quando for em <strong>Área Rural</strong> encaminhar para o IEF em Betim. Meio Ambiente 3535-4250</td>
+      </tr>
+      <tr>
+        <td>Alinhamento de rua e meio fio e abertura</td>
+        <td>
+          <ul>
+            <li>Cópia da Escritura do terreno ou registro (Sendo contrato de compra e venda o mesmo deve ter procedencia
+              e firma reconhecida)</li>
+            <li>RG/ CPF.</li>
+            <li>Comprovante de endereço do proprietário</li>
+          </ul>
+        </td>
+        <td>Obras</td>
+        <td>--</td>
+      </tr>
+      <tr>
+        <td>Habite-se</td>
+        <td>
+          <ul>
+            <li>Cópia da Escritura do terreno ou registro</li>
+            <li>Cópia do alvará ou cópia do selo de aprovação</li>
+            <li>RG/ CPF</li>
+            <li>Comprovante de endereço do proprietário</li>
+            <li>Convenção de condomínio - Para Multi-Familiar</li>
+          </ul>
+        </td>
+        <td>Engenharia</td>
+        <td>Somente o proprietário pode recorrer.</td>
+      </tr>
+      <tr>
+        <td>Análise Prévia</td>
+        <td>
+          <ul>
+            <li>Cópia da Escritura do terreno ou registro</li>
+            <li>01 via da Planta</li>
+          </ul>
+        </td>
+        <td>Engenharia</td>
+        <td>Somente o proprietário ou responsável técnico podem recorrer.</td>
+      </tr>
+      <tr>
+        <td>Aprovação de planta ou projeto para construção - ALVARÁ DE CONSTRUÇÃO.</td>
+        <td>
+          <ul>
+            <li>03 cópias do projeto</li>
+            <li>ART assinada (Caso seja rascunho ou apresentar pgto)</li>
+            <li>RG / CPF e ônus reais</li>
+            <li>Comprovante de endereço do proprietário</li>
+            <li>Última contratação contratual</li>
+            <li>Contrato social</li>
+            <li>Cartão CNPJ</li>
+          </ul>
+        </td>
+        <td>Engenharia</td>
+        <td>Somente o proprietário ou responsável técnico podem recorrer.</td>
+      </tr>
+      <tr>
+        <td>Desmembramento ou Remembramento</td>
+        <td>
+          <ul>
+            <li>03 cópias do projeto</li>
+            <li>03 guias do CREA</li>
+            <li>RG / CPF e ônus reais</li>
+            <li>03 cópias do memorial descritivo</li>
+            <li>03 cópias da matrícula. (Registro ônus e ações atualizadas)</li>
+          </ul>
+        </td>
+        <td>Engenharia</td>
+        <td>Somente o proprietário ou responsável técnico podem recorrer.</td>
+      </tr>
+      <tr>
+        <td>Unificação e acerto de divisa</td>
+        <td>
+          <ul>
+            <li>03 cópias do projeto</li>
+            <li>03 guias do CREA</li>
+            <li>03 cópias do memorial descritivo</li>
+            <li>03 cópias da matrícula (registro ônus e ações atualizadas)</li>
+            <li>RG / CPF e ônus reais</li>
+          </ul>
+        </td>
+        <td>Engenharia</td>
+        <td>Somente o proprietário ou responsável técnico podem recorrer</td>
+      </tr>
+      <tr>
+        <td>Retificação de área</td>
+        <td>
+          <ul>
+            <li>02 cópias do projeto</li>
+            <li>RG / CPF e ônus reais</li>
+            <li>02 guias do CREA</li>
+            <li>02 cópias do memorial descritivo</li>
+            <li>02 cópias da matrícula (registro ônus e ações atualizadas)</li>
+          </ul>
+        </td>
+        <td>Engenharia</td>
+        <td>Somente o proprietário pode recorrer</td>
+      </tr>
+      <tr>
+        <td>Certidão de número (Urbana) / Declaração de Número (Rural)</td>
+        <td>
+          <ul>
+            <li>Cópia da Escritura do terreno ou registro (Sendo contrato de compra e venda o mesmo deve ter procedência
+              e firma reconhecida)</li>
+            <li>RG / CPF</li>
+            <li>Comprovante de endereço do proprietário</li>
+          </ul>
+        </td>
+        <td>Engenharia</td>
+        <td>Somente o proprietário pode recorrer</td>
+      </tr>
+      <tr>
+        <td>Confrontação</td>
+        <td>
+          <ul>
+            <li>Cópia da Escritura do terreno ou registro (Sendo contrato de compra e venda o mesmo deve ter procedência
+              e firma reconhecida)</li>
+            <li>RG / CPF</li>
+          </ul>
+        </td>
+        <td>Engenharia</td>
+        <td>--</td>
+      </tr>
+      <tr>
+        <td>Arrendamento perpétuo</td>
+        <td>
+          <ul>
+            <li>Comprovante de endereço do proprietário</li>
+            <li>RG/ CPF</li>
+            <li>Comprovante de endereço do proprietário</li>
+            <li>Nome completo da pessoa que encontra-se sepultada no local</li>
+          </ul>
+        </td>
+        <td>Engenharia</td>
+        <td>Somente o proprietário pode recorrer</td>
+      </tr>
+      <tr>
+        <td>Inscrição Municipal</td>
+        <td>
+          <ul>
+            <li>RG/ CPF (Sócios)</li>
+            <li>Comprovante de endereço</li>
+            <li>Escritura do terreno, contrato de locação ou autorização do proprietário para utilização do imóvel com
+              firma reconhecida</li>
+            <li>Contrato social</li>
+            <li>Cópia do CNPJ atualizado</li>
+            <li>Certidão negativa de débitos</li>
+          </ul>
+        </td>
+        <td>Engenharia</td>
+        <td>--</td>
+      </tr>
+      <tr>
+        <td>Inscrição Municipal Microempreendedor</td>
+        <td>
+          <ul>
+            <li>RG/ CPF</li>
+            <li>Comprovante de endereço</li>
+            <li>Escritura do terreno, contrato de locação ou autorização do proprietário para utilização do imóvel com
+              firma reconhecida</li>
+            <li>Cópia do CNPJ atualizado</li>
+            <li>Certificado de Microempreendedor</li>
+            <li>Certidão negativa de débitos</li>
+            <li>CND do Imóvel - Retirar guia de Serviços do Site</li>
+          </ul>
+        </td>
+        <td>Engenharia</td>
+        <td>--</td>
+      </tr>
+      <tr>
+        <td>Alvará de Ambulantes</td>
+        <td>
+          <ul>
+            <li>RG/ CPF e Título de Eleitor</li>
+            <li>Comprovante de endereço</li>
+            <li>Escritura do terreno, contrato de locação</li>
+            <li>Local escolhido, mercadorias</li>
+            <li>Certidão negativa de débitos</li>
+          </ul>
+        </td>
+        <td>Tributos</td>
+        <td>--</td>
+      </tr>
+      <tr>
+        <td>Renovação de alvará de funcionamento</td>
+        <td>
+          <ul>
+            <li>Alvará vencido ou CNPJ</li>
+          </ul>
+        </td>
+        <td>Engenharia</td>
+        <td>Caso seja autônomo heverá sempre duas guias a serem pagas ISS e Alvará</td>
+      </tr>
+      <tr>
+        <td>Baixa da inscrição municipal</td>
+        <td>
+          <ul>
+            <li>Cópia da CNPJ atualizada</li>
+          </ul>
+        </td>
+        <td>Engenharia</td>
+        <td>--</td>
+      </tr>
+      <tr>
+        <td>Alvará de eventos</td>
+        <td>
+          <ul>
+            <li>Qdo PJ contrato social, estatuto e CNPJ</li>
+            <li>Qdo PF RG/ CPF</li>
+            <li>Comprovante de endereço</li>
+            <li>Contrato de locação ou autorização do proprietário para utilização do imóvel com firma reconhecida</li>
+            <li>Apresentar licença / autorização quando necessário: </li>
+            <li>Autorização de instalação temporária, a ser expedida pela Engenharia </li>
+            <li>Autorização da Diretoria Municipal de trânsito (Transleme)</li>
+            <li>Autorização da Secretaria Municipal do Meio Ambiente</li>
+            <li>AVCB</li>
+            <li>Alvará sanitário, quando sujeito ao controle sanitário</li>
+            <li>Ciência da Polícia Militar</li>
+            <li>Demais documentos necessários à espécie</li>
+          </ul>
+        </td>
+        <td>Engenharia</td>
+        <td>--</td>
+      </tr>
+      <tr>
+        <td>ITBI</td>
+        <td>
+          <ul>
+            <li>Comprovante de residência (Adquirente (Quem compra)</li>
+            <li>Comprovante de RG/ CPF/ CNPJ (Adquirente e Transmitente)</li>
+            <li>CRI (Certidão de Registro de Imóvel) - Atualizada - Máximo 60 dias</li>
+            <li>Procuração - Qdo houver representante legal RG/ CPF</li>
+            <li>Se for Imobiliária - Cópia da minuta de transferência</li>
+            <li>Financiamento CEF - Cópia do contrato de Financiamento habitacional</li>
+            <li>Informação Cartório onde será lavrada a escritura - imprescindível para o processo de transferência do
+              imóvel</li>
+            <li> <strong>2 vias Frente e Verso - </strong> Formulário de Declaração de Lançamentos ITBI "Inter Vivos"
+            </li>
+          </ul>
+        </td>
+        <td>Engenharia</td>
+        <td>--</td>
+      </tr>
+      <tr>
+        <td>Solicitação caminhão pipa</td>
+        <td>
+          <ul>
+            <li>Certidão de número ou registro de imóveis com procedência ou comprovante de endereço (conta de energia).
+            </li>
+            <li>RG / CPF</li>
+          </ul>
+        <td>Obras</td>
+        <td>Somente será fornecido para residência.<strong> Imóvel em construção não será atendido.</strong> </td>
+        </td>
+      </tr>
+      <tr>
+        <td>Solicitação para descontar dias</td>
+        <td>
+          <ul>
+            <li>RG / CPF</li>
+          </ul>
+        <td>Secretaria do requerente</td>
+        <td>Secretaria do requerente</td>
+        </td>
+      </tr>
+      <tr>
+        <td>Movimentação de Terra</td>
+        <td>
+          <ul>
+            <li>Comprovante de endereço</li>
+            <li>RG / CPF</li>
+            <li>Contrato ou Escritura do terreno</li>
+          </ul>
+        <td>Meio Ambiente</td>
+        <td>--</td>
+        </td>
+      </tr>
+      <tr>
+        <td>Limpeza de rua</td>
+        <td>
+          <ul>
+            <li>Comprovante de endereço</li>
+            <li>RG / CPF</li>
+          </ul>
+        <td>Obras</td>
+        <td>--</td>
+        </td>
+      </tr>
+      <tr>
+        <td>Alvará Sanitário</td>
+        <td>
+          <ul>
+            <li>Comprovante de endereço</li>
+            <li>RG / CPF</li>
+            <li>Requerimento - fornecido pela VISA</li>
+            <li>Termmo de Responsabilidade - fornecido pela VISA</li>
+            <li>Cópia da Identidade do Conselho a qual pertença o profissional.</li>
+            <li>Cópia da CRT - Certidão de Responsabilidade Técnica do conselho a qual pertença o profissional</li>
+            <li>Cópia do Alvará de Localização e Funcionamento emitido pela Prefeitura municipal</li>
+            <li>Cópia do Contrato Social da empresa caso tenha alterações</li>
+
+          </ul>
+        <td>Secretaria da Saúde</td>
+        <td><strong>Qualquer dúvidas ligar para 3535-4343 - VISA / Mateus Leme</strong></td>
+        </td>
+      </tr>
+      <tr>
+        <td>Requeriemnto Energia Elétrica</td>
+        <td>
+          <ul>
+            <li>Comprovante de endereço</li>
+            <li>RG / CPF</li>
+          </ul>
+        <td>Gabinete</td>
+        <td>Somente para braço/ luminária <br>Lâmpada não abre protocolo - direto na Engenharia </td>
+        </td>
+      </tr>
+      <tr>
+        <td>Requeriemnto de Férias</td>
+        <td>
+          <ul>
+            <li>RG / CPF</li>
+          </ul>
+        <td>Departamento Pessoal</td>
+        <td>Somente até o 15º dia do mês para o mês subsequente</td>
+        </td>
+      </tr>
+      <tr>
+        <td>Requeriemnto de Vale Transporte</td>
+        <td>
+          <ul>
+            <li>Comprovante de endereço</li>
+            <li>RG / CPF</li>
+          </ul>
+        </td>
+        <td>Secretaria Responsável</td>
+        <td> => Saúde, Assistência Social, Obras, Educação <br>As demais para o Departamento Pessoal</td>
+      </tr>
+      <tr>
+        <td>Requeriemnto de Folga</td>
+        <td>
+          <ul>
+            <li>RG / CPF</li>
+          </ul>
+        </td>
+        <td>Secretaria Responsável</td>
+        <td> => Saúde, Assistência Social, Obras, Educação <br>As demais para o Departamento Pessoal</td>
+      </tr>
+      <tr>
+        <td>Requeriemnto de restituição de IPTU</td>
+        <td>
+          <ul>
+            <li>Última guia paga</li>
+          </ul>
+        </td>
+        <td>Arrecadação</td>
+        <td>--</td>
+      </tr>
+      <tr>
+        <td>Credencial para Idosos</td>
+        <td>
+          <ul>
+            <li>Documento de identificação:<br> CNH, RG ou outro que contenha data de nascimento e filiação</li>
+            <li><strong>IDOSO</strong> acima de 60 anos</li>
+            <li>Cópia autenticada do <strong>Atestado Médico</strong> </li>
+          </ul>
+        </td>
+        <td>Trânsito</td>
+        <td><strong>Em caso de furto, roubo e perda (extravio) do cartão Credencial,</strong> deve ser apresentado boletim de ocorrência para emissão da segunda via </td>
+      </tr>
+      <tr>
+        <td>Credencial para Deficientes</td>
+        <td>
+          <ul>
+            <li>Documento de identificação:<br> CNH, RG ou outro que contenha data de nascimento e filiação</li>
+            <li>Comprovante de Residência atualizado</li>
+            <li>Declaração médica da deficiência constando o grau de deficiência ou dificuladade de locomoção</li>
+            <li>Poderá ser utilizado o <strong>o laudo médico do DETRAN</strong> (Caso o beneficiário seja o condutor)</li>
+          </ul>
+        </td>
+        <td>Trânsito</td>
+        <td><strong>Em caso de furto, roubo e perda (extravio) do cartão Credencial,</strong> deve ser apresentado boletim de ocorrência para emissão da segunda via </td>
+      </tr>
+      <tr>
+      <td>Autorização de emplacamento categoria aluguel empresa</td>
+        <td>
+          <ul>
+            <li>Cópia do Contrato Social</li>
+            <li>Comprovante de endereço da empresa</li>
+            <li>Cópia do cartão CNPJ</li>
+            <li>Cópia da Identidade e CPF dos Sócios</li>
+            <li>Cópia do alvará de funcionamento com validade</li>
+            <li>Documento de transferência do Veiculo</li>
+            <li>Cópia da ANTT</li>
+            </ul>
+        </td>
+        <td>Trânsito</td>
+        <td>---</td>
+      </tr>
+        <tr>
+          <td>Autorização de emplacamento categoria aluguel <strong>autônomo</strong></td>
+            <td>
+              <ul>
+                <li>Cópia da CNH com "exerce atividade remunerada"</li>
+                <li>Cópia da CRV (em nome do requerente ou preenchido para transferência)</li>
+                <li>Comprovante de endereço atualizado</li>
+                <li>Cópia da Certidão negativa de débitos municipal (CND)</li>
+                <li>Cópia da inscrição municipal</li>
+                <li>Cópia da ANTT</li>
+                </ul>
+            </td>
+            <td>Trânsito</td>
+            <td>---</td>
+          </tr>
+          <tr>
+            <td>Documentação para Transporte Escolar <strong>Empresa</strong></td>
+              <td>
+                <ul>
+                  <li>Cópia do documento do proprietário</li>
+                  <li>Cópia da CRV atualizada</li>
+                  <li>Cópia do Certificado ou carteira de curso de condutor para a modalidade solicitada de escolares em empresas devidamente cadastradas no DETRAN</li>
+                  <li>Certificado de inspeção veicular de empresas devidamente cadastradas no Inmetro DETRAN</li>
+                  <li>Cópia do Contrato Social</li>
+                  <li>Cópia do cartão CNPJ</li>
+                  <li>Cópia do RG e CPF dos Sócios</li>
+                  <li>Certidão negativa de Antecedentes criminais</li>
+                  <li>Declaração de bons Antecedentes</li>
+                  <li>Certidão de quitação eleitoral</li>
+                  <li>Atestado Médico de capacitação</li>
+                  <li>Declaração de regularidade de contribuinte individual</li>
+                  <li>02 fotos 3x4</li>
+                </td>
+              <td>Trânsito</td>
+              <td>---</td>
+            </tr>
+          <tr>
+        <td>Autorização para grupo de risco</td>
+        <td>
+          <ul>
+            <li>Laudo médico</li>
+            <li>RG para maiores de 60 anos</li>
+          </ul>
+        <td>Departamento Pessoal</td>
+        <td>
+          <li>Solicito autorização para que eu seja liberado de minhas funções por me encontrar no grupo de risco do coronavírus, conforme decreto n° 27 de 17 de março de 2020.</li>
+          <li>O requerente informa que não pode voltar a exercer suas atividades por pertencer ao grupo de risco do covid-19 conforme documentos em anexo.</li>
+        </td>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <footer>
+    <p class="foot">&copy; Protocolo 2021</p>
+  </footer>
+  <script src="Protocolo/scripts.js"></script>
+</body>
+
+</html>

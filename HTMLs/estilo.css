@@ -1,0 +1,43 @@
+body{
+    background: rgb(117, 186, 207);
+    font: normal 11pt Arial;
+
+}
+
+header{
+    color: white;
+    text-align: center;
+
+}
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: auto;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+}
+select#flista{
+    width: auto;
+    height: 6.25rem;
+}
+div#teste{
+    text-align: justify;
+}
+#fnum{
+    text-align: center;
+    font-size: 14pt;
+    }
+footer{
+    font: normal 10pt Arial;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+#obs{
+    color: blue;
+}       
+
+#res{
+    font-size: small;
+}

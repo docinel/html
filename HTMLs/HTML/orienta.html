@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORIENTAÇÕES NOTAS FISCAIS E PEDIDOS</title>
+</head>    
+<style>
+    h1{
+        text-align: center;
+    }
+    #mais{
+        display: none;
+    }
+    #mais1{
+        display: none;
+    }    
+</style>
+<body>
+    <header>
+        <h1>ORIENTAÇÕES DA NATUREZA DE OPERAÇÕES NOTAS FISCAIS E PEDIDOS</h1>
+    </header>
+    <section>
+        <h3>PEDIDO:</h3>
+        <div>
+            <p>
+                Quando o pedido sair da loja <span id="pontos">...</span><span id="mais"> e o <b>pagamento</b> for efetuado por <b>dinheiro ou cheque</b> <i>SEMPRE SERÁ VENDAS</i>
+
+                </span>
+            </p>
+            <button onclick="leiaMais()" id="btLeiaMais">Leia Mais</button><br><br>
+        </div><br>
+        <h3>PIX</h3>
+        <div>
+            <p>Quando o pedido sair da loja <span id="pontos1">...</span><span id="mais1"> e o <b>pagamento</b> for efetuado por <b>PIX</b> 
+
+            </span>
+           </p>
+           <button onclick="leiaMais1()" id="btLeiaMais1">Leia Mais</button><br><br>
+        </div>
+
+        
+
+        fazer pedido de remessa consignação para a loja e mandar faturar
+
+
+
+        SAIU DA LOJA
+        DINHEIRO/ CHEQUE => VENDAS
+        PIX ATE A CONFIRMAÇÃO DO PGTO => VENDAS
+        CONFIRMOU ENTRGA FUTURA => ENTREGA FUTURA
+
+        SAIU DA LOJA 
+        CARTÃO => VENDA ENTREGA FUTURA
+
+        SAIR DA FABRICA
+        VENDA ENTREGA FUTURA
+
+        ===============================================================================================
+        REGRA TUDO FOI PAGO E NAO DEVE NADA => ENTREGA FUTURA
+        SAIR 
+
+        LINK DIGITAR VENDAS AGUARDA A CONFIRMAÇÃO E ATLTERE PARA ENTREGA FUTURA
+        SOLICITA PRA ROSE E AGUARDA 
+        ===============================================================================================
+        DIVISAO DE PEDIDO:
+        UMA PARTE DA LOJA E A OUTRA DA FABRICA => DIVIDIR
+        BRINDE DIVIDR
+        ===============================================================================================
+
+        NF 
+        PRODUZIR NA FABRICA:
+        FATURAMENTO ANTECIPADO
+        SOMENTE RETIRAR NOTA FISCAL QDO A VENDA FOR REALIZADA ATRAVES DE CARTÃO DA LOJA
+        ===============================================================================================
+        QDO SAIR DA LOJA VEND AMERCADORIA CARTAO
+
+
+    </section>
+    <script type="text/javascript">
+        function leiaMais(){
+            var pontos=document.getElementById("pontos");
+            var maisTexto=document.getElementById("mais");
+            var btLeiaMais=document.getElementById("btLeiaMais");
+
+            if(pontos.style.display === "none"){
+                pontos.style.display = "inline";
+                maisTexto.style.display = "none";
+                btLeiaMais.innerHTML = "Leia Mais"; 
+            }else{
+                pontos.style.display = "none";
+                maisTexto.style.display = "inline";
+                btLeiaMais.innerHTML = "Leia Menos"; 
+            }
+        }
+        function leiaMais1(){
+            var pontos1=document.getElementById("pontos1");
+            var maisTexto=document.getElementById("mais1");
+            var btLeiaMais1=document.getElementById("btLeiaMais1");
+
+            if(pontos1.style.display === "none"){
+                pontos1.style.display = "inline";
+                maisTexto.style.display = "none";
+                btLeiaMais1.innerHTML = "Leia Mais"; 
+            }else{
+                pontos1.style.display = "none";
+                maisTexto.style.display = "inline";
+                btLeiaMais1.innerHTML = "Leia Menos"; 
+            }
+        }
+    </script>
+</body>
+</html>

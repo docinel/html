@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Telefônica Nogueira Andrade</title>
+    <style>
+      /* *{
+        margin: auto;
+        padding: auto;
+      } */
+      body{
+        background-color: rgb(240, 239, 239);
+      }
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #9bc9db;
+          text-align: left;
+          padding: 4px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #9bc9db;
+        }
+        .filtros{
+  display: inline-block;
+  
+  }
+
+  #filtro-nome{
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  padding-left:5px;
+  font-style:italic;
+  font-size:18px;
+  height:32px;
+  width:400px;
+  border-radius:13px;
+  }
+
+  .filtros input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    background: rgb(162, 223, 174);
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    font-weight: bold;
+  }
+  #data-hora{
+    color: blue;
+  }
+  #img{
+    margin-left: auto;
+    height: 60px;
+    width: 155px;
+    background-color: rgb(248, 248, 248);
+  }
+  #foot{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    text-align: center;    
+  }
+  </style>
+</head>
+<!-- <h5 style="margin: 0; padding: 0;">Citação do Dia:</h5><q style="font-size: smaller;">No Brasil cultuamos duas frustrações: a dos que têm poder, mas não têm competência para exercer e a dos que têm competência, mas não têm poder.</q> -->
+<header>
+    <div id="img">
+      <img src="logo.jpg" alt="logo">
+    </div>
+    <h1 style="text-align: center; margin-top: 18px; margin-bottom: 20px; text-decoration: underline;">Lista de Contatos e Ramais</h1>
+    <h1 style="text-align: center; margin-top: 18px; margin-bottom: 20px; text-decoration: underline;">(31) 3191-7088 / (31) 3191-7089</h1>
+    <h1 style="text-align: center; margin-top: 18px; margin-bottom: 20px; text-decoration: wavy;">OBS.: Qdo o Ramal estiver ocupado ou não atender pode-se transferir para o Corporativo</h1>
+
+    <div id="data-hora"></div><br>
+    <div class="filtros">
+      <input type="text" id="filtro-nome" placeholder="Pesquisar Contato..."/>
+    </div>
+    
+</header>
+<br>
+<body>
+  
+    <section>
+        <table id="lista">
+            <!-- <tr>
+              <th colspan="5" style="text-align: center;">Administrativo</th>
+            </tr> -->
+            <tr>
+              <th>Setor</th>
+              <th>Contato</th>
+              <th>Email</th>
+              <th>Ramal</th>
+              <th>Corporativo</th>
+            </tr>
+            <tr>
+              <td>Almoxarifado</td>
+              <td>Matheus Lucas</td><td><a href="mailto:almoxarifado@nacolchoes.com.br">almoxarifado@nacolchoes.com.br</a></td><td>5104</td><td>--------------------</td>
+            </tr>
+            <tr>
+              <td>Assist. Técnica Líder</td>
+              <td>Welton Ferreira</td><td><a href="mailto:assistencia@nacolchoes.com.br">assistencia@nacolchoes.com.br</a></td><td>---</td><td><a href="tel:31982679672">(31) 9-8267-9672</a></td>
+            </tr>
+            <!-- <tr>
+              <td>Assist. Técnica Premium</td>
+              <td>Rodrigo (MotoBoy)</td><td>--------------------</td><td>---</td><td><a href="tel:3199624271">(31) 9-9642-4271</a></td>
+            </tr>
+            <tr> -->
+              <td>Comercial</td>
+              <td>Dhebora</td><td><a href="mailto:comercial@nacolchoes.com.br">comercial@nacolchoes.com.br</a></td><td>5101</td><td><a href="tel:31984713685">(31) 9-8471-3685</a></td>
+            </tr>
+            <tr>
+              <td>Coordenador Produção</td>
+              <td>Hugo Leonardo</td><td><a href="mailto:--------------------"></a>--------------------</td><td>---</td><td><a href="tel:31971279944">(31) 9-7127-9944</a></td>
+            </tr>
+            <tr>
+              <td>Gerente Comercial</td>
+              <td>Edmilson Camargos</td><td><a href="mailto:edmilson@nacolchoes.com.br">edmilson@nacolchoes.com.br</a></td><td>---</td><td><a href="tel:37984085637">(37) 9-8408-5637</a></td>
+            </tr>
+            <tr>
+              <td>PCP - Programação Produção</td>
+              <td>Daniel Rodrigues</td> <td><a href="mailto:pcp@nacolchoes.com.br">pcp@nacolchoes.com.br</a></td> <td>---</td><td><a href="tel:31983462464">(31) 9-8346-2464</a></td>
+            </tr>
+              <td>Cozinha</td>
+              <td>Maria Raimunda</td><td>--------------------</td><td>218</td><td>--------------------</td>
+            </tr>
+            <tr>
+              <td>Faturamento</td>
+              <td>Sislandia Nóbrega</td><td><a href="mailto:sislandia@nacolchoes.com.br">sislandia@nacolchoes.com.br</a></td><td>5107</td><td><a href="tel:31983462178">(31) 9-8346-2178</a></td>
+            </tr>
+            <tr>
+              <td>Compras</td>
+              <td>Rômullo</td><td><a href="mailto:romulo@nacolchoes.com.br">romulo@nacolchoes.com.br</a></td><td>5103</td><td><a href="tel:31983141431">(31) 9-8314-1431</a></td>
+            </tr>
+            <tr>
+              <td>Financeiro</td>
+              <td>Patrícia Diniz</td><td><a href="mailto:patricia@nacolchoes.com.br">patricia@nacolchoes.com.br</a></td><td>247 / 5106</td><td><a href="tel:31997103022">(31) 9-9710-3022</a></td>
+            </tr>
+            <tr>
+              <td>Sac</td>
+              <td>Emanuelle</td><td><a href="mailto:sac@nacolchoes.com.br">sac@nacolchoes.com.br</a></td><td>5101</td><td><a href="tel:31995351046">(31) 9-9535-1046</a></td>
+            </tr>
+            <tr>
+              <td>RH</td>
+            <td>Paula Diniz</td><td><a href="mailto:paula@nacolchoes.com.br">paula@nacolchoes.com.br</a></td><td>230 / 5102</td><td><a href="tel:31998973582">(31) 9-9897-3582</a></td>
+            </tr>
+            <tr>
+              <td>Logística / Expedição</td>
+              <td>Leanderson Aires</td><td><a href="mailto:expedicao@nacolchoes.com.br">expedicao@nacolchoes.com.br</a></td><td>---</td><td><a href="tel:31984660569">(31) 9-8466-0569</a></td>
+            </tr>
+            <tr>
+              <td>Portaria</td>
+              <td>--------------------</td><td>--------------------</td><td>229 / 5100</td><td>--------------------</td>
+            </tr>
+            <tr>
+              <td>TI</td>
+              <td>Rodrigo Docinel</td><td><a href="mailto:ti@nacolchoes.com.br">ti@nacolchoes.com.br</a></td><td>5105</td><td><a href="tel:31971494575">(31) 9-7149-4575</a></td>
+            </tr>
+            <tr>
+              <td>Gerência Administrativo</td>
+              <td>Adelia Morais</td><td><a href="mailto:adelia@nacolchoes.com.br">adelia@nacolchoes.com.br</a></td><td>5109</td><td><a href="tel:31987576005"><!--(31) 9-8757-6005--></a>--------------------</td>
+            </tr>
+            <tr>
+              <td>Presidência</td>
+              <td>José Flávio</td><td><a href="mailto:joseflavio@nacolchoes.com.br">joseflavio@nacolchoes.com.br</a></td><td>---</td><td><a href="tel:31984420276">(31) 9-8442-0276</a></td>
+            </tr>
+            <tr>
+              <td>Presidência</td>
+              <td>João Flávio</td><td><a href="mailto:joaoflavio@nacolchoes.com.br">joaoflavio@nacolchoes.com.br</a></td><td>---</td><td><a href="tel:31984420282">(31) 9-8442-0282</a></td>
+            </tr>
+            <tr>
+              <td>Custos</td>
+              <td>Dhebora Reis</td><td><a href="mailto:dhebora@nacolchoes.com.br">dhebora@nacolchoes.com.br</a></td><td>252 / 5101</td><td><a href="tel:31984664394">(31) 9-8466-4394</a></td>
+            </tr>
+            <tr>
+            <td>Manutenção</td>
+              <td>Hudson Oliveira</td><td><a href="mailto:manutencao@nacolchoes.com.br">manutencao@nacolchoes.com.br</a></td><td>---</td><td><a href="tel:31984557506">(31) 9-8455-7506</a></td>
+            </tr>
+            <tr>
+            <td>Engenharia</td>
+            <td>Gabryel</td><td><a href="mailto:engenharia@nacolchoes.com.br">engenharia@nacolchoes.com.br</a></td><td>5108</td><td>--------------------</td>
+          </tr>
+              <tr>
+                <td>Loja Divinópolis</td>
+                <td>Giordana</td><td><a href="mailto:divinopolis@nacolchoes.com.br">divinopolis@nacolchoes.com.br</a></td><td><a href="tel:3732298644">(37) 3229-8644</a></td><td><a href="tel:31984682912">(31) 9-8468-2912</a></td>
+              </tr>
+              <tr>
+                <td>Loja Itaúna</td>
+                <td>Tainara</td><td><a href="mailto:tainara.ita@nacolchoes.com.br">tainara.ita@nacolchoes.com.br</a></td><td><a href="tel:3732422675">(37) 3242-2675</a></td><td><a href="tel:3784197192">(37) 9-8419-7192</a></td>
+              </tr>
+                <td>Loja Juatuba</td>
+                <td>Elayne Anatielle</td><td><a href="mailto:juatuba.premium@nacolchoes.com.br">juatuba.premium@nacolchoes.com.br</a></td><td>---</td><td><a href="tel:31995138557">(31) 9-9513-8557</a></td>
+              </tr>
+            </tr>
+            <td>Loja Cajuru</td>
+            <td>Miriam</td><td><a href="mailto:cajuru.premium@nacolchoes.com.br">cajuru.premium@nacolchoes.com.br</a></td><td>---</td><td><a href="tel:31984085637">(31) 9-8408-5637</a></td>
+          </tr>
+              <!--
+              <tr>
+                <td>Loja Nova Serrana</td>
+                <td>Ivone Alves</td><td><a href="mailto:novaserrana@nacolchoes.com.br">novaserrana@nacolchoes.com.br</a></td><td><a href="tel:3732266190">(37) 3226-6190</a></td><td><a href="tel:31984678978">(31) 9-8467-8978</a></td>
+              </tr> -->
+              <tr>
+                <td>Loja Pará de Minas</td>
+                <td>Adelina Araujo</td><td><a href="mailto:adelina.para@nacolchoes.com.br">adelina.para@nacolchoes.com.br</a></td><td><a href="tel:3732317896">(37) 3231-7896</a></td><td><a href="tel:31984675062">(31) 9-8467-5062</a></td>
+              </tr>
+              <tr>
+                <td>Loja Sete Lagoas</td>
+                <td>Ana Iris</td><td><a href="mailto:setelagoas.premium@nacolchoes.com.br">setelagoas.premium@nacolchoes.com.br</a></td><td><a href="tel:3137716263">(31) 3771-6263</a></td><td><a href="tel:31983732267">(31) 9-8373-2267</a></td>
+              </tr>
+              <tr>
+                <td>Loja Silva Lobo</td>
+                <td>Patricia</td><td><a href="mailto:silvalobo.premium@nacolchoes.com.br">silvalobo.premium@nacolchoes.com.br</a></td><td><a href="tel:3136435822">(31) 3643-5822</a></td><td><a href="tel:31983463844">(31) 9-8346-3844</a></td>
+              </tr>
+              <!-- <tr>
+                <td>Loja Contagem</td>
+                <td>Vilson</td><td><a href="mailto:contagem.premium@nacolchoes.com.br">contagem.premium@nacolchoes.com.br</a></td><td><a href="tel:3135655495">(31) 3565-5495</a></td><td><a href="tel:31983460860">(31) 9-8346-0860</a></td>
+              </tr> -->
+              <tr>
+                <td>Loja Buritis</td>
+                <td>Adriana</td><td><a href="mailto:buritis.premium@nacolchoes.com.br">buritis.premium@nacolchoes.com.br</a></td><td><a href="tel:3133706521">(31) 3370-6521</a></td><td><a href="tel:31984110939">(31) 9-8411-0939</a></td>
+              </tr>
+              <tr>
+                <td>Loja Betim</td>
+                <td>Larissa</td><td><a href="mailto:betim.premium@nacolchoes.com.br">betim.premium@nacolchoes.com.br</a></td><td><a href="tel:3133704548">(31) 3370-4548</a></td><td><a href="tel:31984099502">(31) 9-8409-9502</a></td>
+              </tr>
+          </table>
+    </section>
+    <script>
+      // Função para formatar 1 em 01
+ const zeroFill = n => {
+    return ('0' + n).slice(-2);
+}
+
+// Cria intervalo
+const interval = setInterval(() => {
+    // Pega o horário atual
+    const now = new Date();
+
+    // Formata a data conforme dd/mm/aaaa hh:ii:ss
+    const dataHora = zeroFill(now.getUTCDate()) + '/' + zeroFill((now.getMonth() + 1)) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+
+    // Exibe na tela usando a div#data-hora
+    document.getElementById('data-hora').innerHTML = dataHora;
+}, 1000);
+
+document.getElementById('filtro-nome').addEventListener('keyup', (ev) => {
+	const input = ev.target;
+	input.value = input.value.toUpperCase();
+});
+
+ var filtro = document.getElementById('filtro-nome');
+ var tabela = document.getElementById('lista');
+  filtro.onkeyup = function () {
+   var nomeFiltro = filtro.value;
+   for (var i = 1; i < tabela.rows.length; i++) {
+     var conteudoCelula =tabela.rows[i].cells[1].innerText;
+     var corresponde = conteudoCelula.toUpperCase().indexOf(nomeFiltro) >= 0;
+     tabela.rows[i].style.display = corresponde ? '' : 'none';
+   }
+ };
+
+ function protegercodigo() {
+    if (event.button==2||event.button==3){
+        alert('Codigo protegido!');}
+    }
+    document.onmousedown=protegercodigo
+    </script>
+</body><br>
+<footer>
+        <div id="foot">
+          NOGUEIRA ANDRADE INDUSTRIA E COMERCIO LTDA <br>
+          AV PREFEITO JOSE SURDO, Nº 1345, -MATEUS LEME-MG – CEP.: 35670-000.     Contato: (31) 3191-7088 / (31) 3191-7089 <br>
+          CNPJ.: 25.404.617/0001-01 IE.: 407573617.00-77 <br>
+
+        </div>
+</footer>
+</html>
