@@ -1,0 +1,50 @@
+cabecalho{
+
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333 ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.25rem;
+
+}
+
+li{
+    float:left;
+    text-align: center;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1.5rem;
+}
+li a:hover{
+    background-color: #111;
+    color:white;
+}
+
+.foot{
+    margin: .625rem;
+    padding: .625rem;
+    background-color: #333;
+}
+
+.foot-interna{
+    margin: .625rem;
+    padding: .625rem;
+    background-color: aqua;
+}
+
+.foot-space{
+    margin: .625rem;
+    padding: .625rem;
+    background-color: rgb(221, 221, 230);
+    border-color: rgba(209, 18, 18, 0.822);
+    border-width: 2.5rem;
+}
