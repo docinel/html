@@ -22,6 +22,7 @@
         }
         .filtros{
   display: inline-block;
+
   
   }
 
@@ -103,5 +104,8 @@
     background-color: #008CBA;
    text-transform: uppercase;
   }
+.treinamentos{
+  display: inline-block;
 
+}
   
