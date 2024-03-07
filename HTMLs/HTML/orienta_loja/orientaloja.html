@@ -5,45 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NATUREZA DE OPERAÇÕES</title>
-    <style>
-        caption{
-            color: chocolate;
-            text-align: center;
-        }
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        table{
-            border-collapse: collapse;
-            border-style: groove;
-            margin: auto;
-        
-        }
-        caption{
-            font-size: 1.3em;
-            font-weight: bold;
-            padding: .625rem;
-        }
-        td, th{
-            /**border: 0.0625em solid blue;**/
-            padding: .625rem;
-            border-style: groove;
-            border-collapse:separate;
-            background-color: rgb(207, 205, 205);
-        }
-        #foot{
-        font-family: 'Times New Roman', Times, serif;
-        font-size: small;
-        text-align: center;    
-        }
-        #dif{
-            color: rgb(0, 0, 0);
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <!--<h1>TABELA NATUREZA DE OPERAÇÕES</h1> !-->
     </header>
 <table>
     <section>
@@ -70,19 +35,19 @@
                 <td>----------</td>
             </tr>
             <tr>
-                <td><li>Cartão Crédito</li> <li>Débito</li> </td>
+                <td><li>Cartão de Crédito</li> <li>Cartão de Débito</li> </td>
                 <td> Venda Entrega Futura</td>
                 <td>----------</td>
             </tr>
             <tr>
-                <td>PIX</td>
+                <td><li>PIX / Link</li></td>
                 <td>Vendas</td>
                 <td>Após confirmação alterar para Venda Entrega Futura <br> <b style="color: red;">Favor aguardar a Confirmação da Patrícia / Adélia</td>
             </tr>
             <tr>
-                <td>Link</td>
+                <td><li>Boletos</li></td>
                 <td>Vendas</td>
-                <td>Após confirmação alterar para Venda Entrega Futura <br> <b style="color: red;">Favor aguardar a Confirmação da Patrícia / Adélia</b></td>
+                <td>----------</td>
             </tr>
             <tr>
                 <th rowspan="2">PEDIDO FÁBRICA</th>
@@ -91,7 +56,7 @@
                 <td>----------</td>
             </tr>
             <tr>
-                <td>PIX / Link</td>
+                <td><li>PIX / Link</li></td>
                 <td>Vendas</td>
                 <td>Após confirmação alterar para Venda Entrega Futura <br> <b style="color: red;">Favor aguardar a Confirmação da Patrícia / Adélia</td>
             </tr>
@@ -118,7 +83,12 @@
         </tbody>
         <tfoot>
             <tr>
-                <td colspan="5", style="text-align: center;">SOMENTE EMITIR <span style="color: red;">NOTA FISCAL</span>  QUANDO A VENDA FOR REALIZADA ATRAVES DA <span style="font-style: italic;">MÁQUINA DA LOJA</span> </td>
+                <td colspan="5", style="text-align: center;"><b style="color: #32CD32; background-color: rgb(0, 0, 0);">OBSERVAÇÕES: </b> <br> <b>
+                    <li style="color: blue;">Remessa em Consignação - São pedidos para as Lojas reporem seus Estoques.</li>
+                    <li style="color: crimson;">Pedidos com SH - São pedidos vendidos do Estoque das Lojas.</li>
+                    <li style="color: rgb(255, 0, 234);">Códigos Especiais - Vamos ficar atentos! Deve-se acrescentar 20% a 25% ao valor do Produto de acordo com a Tabela.</li>
+                    <li>NA DÚVIDA FAVOR CONSULTAR: <li>Silsânia, Adélia, Patrícia e Rodrigo</li></b>
+                </td>
             </tr>
         </tfoot>
     </section>
@@ -131,9 +101,5 @@
 
     </div>
 </footer>
-<script>
-        alert("Favor ler o quadro informativo sobre as NATUREZAS DE OPERAÇÕES!!!")
-</script>
-
 </body>
 </html>
